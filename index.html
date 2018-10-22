@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+
+
+    <title>Tracalorie | Meal & Calorie Tracker</title>
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <nav>
+        <div class="nav-wrapper blue">
+            <div class="container">
+                <a href="#" class="brand-logo center">Tracalorie</a>
+                <ul class="right">
+                    <li><a href="" class="clear-btn btn blue lighten-3">Clear All</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+
+    <div class="container">
+        <!-- Form Card -->
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title">Add Meal / Food Item</span>
+                <form class="col">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input type="text" placeholder="Add Item" id="item-name">
+                            <label for="item-name">Meal</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input type="number" placeholder="Add Calorie" id="item-calories">
+                            <label for="item-calories">Calories</label>
+                        </div>
+                        <button class="add-btn btn blue darken-3">
+                            <i class="fa fa-plus"></i>Add Meal
+                        </button>
+                        <button class="update-btn btn orange">
+                            <i class="fa fa-edit"></i>Update Meal
+                        </button>
+                        <button class="delete-btn btn red">
+                            <i class="fa fa-trash-alt"></i>Delete Meal
+                        </button> 
+                        <button class="back-btn btn grey pull right">
+                            <i class="fa fa-chevron-circle-left"></i>Back
+                        </button>                        
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Calorie Count  -->
+        <h3 class="center-algin">Total Calories : <span class="total-calories">0</span></h3>
+
+        <!-- Item List -->
+        <ul id="item-list" class="collection">
+            <!-- <li class="collection-item" id="item-0">
+                <strong>Steak Dinner: </strong> <em>1200 Calories</em>
+                <a href="#" class="secondary-content">
+                    <i class="fa fa-pencil-alt"></i>
+                </a>
+            </li>
+            <li class="collection-item" id="item-0">
+                <strong>Pasta Dinner: </strong> <em>1400 Calories</em>
+                <a href="#" class="secondary-content">
+                    <i class="edit-item fa fa-pencil-alt"></i>
+                </a>
+            </li>
+            <li class="collection-item" id="item-0">
+                <strong>Tac Dinner: </strong> <em>1800 Calories</em>
+                <a href="#" class="secondary-content">
+                    <i class="fa fa-pencil-alt"></i>
+                </a>
+            </li> -->
+        </ul>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
